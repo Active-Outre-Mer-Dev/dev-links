@@ -1,0 +1,12 @@
+{
+  "tech": [
+    {
+      "href": "https://nextjs.org",
+      "label": "Next.js"
+    },
+    {
+      "href": "https://kit.svelte.dev/",
+      "label": "SvelteKit"
+    }
+  ]
+}
