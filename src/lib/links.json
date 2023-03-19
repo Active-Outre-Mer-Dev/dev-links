@@ -7,6 +7,10 @@
     {
       "href": "https://kit.svelte.dev/",
       "label": "SvelteKit"
+    },
+    {
+      "href": "https://google.com/",
+      "label": "Google"
     }
   ]
 }
