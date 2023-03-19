@@ -45,6 +45,8 @@ This file contains all the links that will be used to create "Active Outre-Mer" 
 
 This is a list of websites that can be useful when choosing a font for a website's design :
 
+-
+
 ## SVG designs
 
 This is a list of websites that can be useful when generating SVG design and/or patterns for your websites :
@@ -73,8 +75,16 @@ This is a list of Visual Studio Code extensions that can be veery useful for web
 
 These websites can be used as reference for a new project or the update of an existing one :
 
+-
+
 ## Design Tools
 
 These tools can be of great aid when it comes down to creating a design for your next project :
+
+-
+
+## Documentation
+
+These tools are very useful, they provide documentation for developpers even without an internet connection, this is especially useful when there is no available connection.
 
 -
