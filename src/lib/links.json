@@ -1,16 +1,40 @@
 {
   "tech": [
     {
-      "href": "https://nextjs.org",
-      "label": "Next.js"
+      "href": "src/routes/basics/+page.svelte",
+      "label": "Basic requirements"
     },
     {
-      "href": "https://kit.svelte.dev/",
-      "label": "SvelteKit"
+      "href": "src/routes/designs/+page.svelte",
+      "label": "Design tools"
     },
     {
-      "href": "https://google.com/",
-      "label": "Google"
+      "href": "src/routes/colors/+page.svelte",
+      "label": "Color palettes"
+    },
+    {
+      "href": "src/routes/SVGs/+page.svelte",
+      "label": "SVG Designs"
+    },
+    {
+      "href": "src/routes/fonts/+page.svelte",
+      "label": "Fonts"
+    },
+    {
+      "href": "src/routes/docs/+page.svelte",
+      "label": "Documentation"
+    },
+    {
+      "href": "src/routes/frameworks/+page.svelte",
+      "label": "Framework"
+    },
+    {
+      "href": "src/routes/UI_libs/+page.svelte",
+      "label": "UI Libraries"
+    },
+    {
+      "href": "src/routes/examples/+page.svelte",
+      "label": "Example websites"
     }
   ]
 }
