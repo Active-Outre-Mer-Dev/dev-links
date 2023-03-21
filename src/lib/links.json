@@ -1,39 +1,39 @@
 {
   "tech": [
     {
-      "href": "src/routes/basics/+page.svelte",
+      "href": "/basics",
       "label": "Basic requirements"
     },
     {
-      "href": "src/routes/designs/+page.svelte",
+      "href": "/designs",
       "label": "Design tools"
     },
     {
-      "href": "src/routes/colors/+page.svelte",
+      "href": "/colors",
       "label": "Color palettes"
     },
     {
-      "href": "src/routes/SVGs/+page.svelte",
+      "href": "/SVGs",
       "label": "SVG Designs"
     },
     {
-      "href": "src/routes/fonts/+page.svelte",
+      "href": "/fonts",
       "label": "Fonts"
     },
     {
-      "href": "src/routes/docs/+page.svelte",
+      "href": "/docs",
       "label": "Documentation"
     },
     {
-      "href": "src/routes/frameworks/+page.svelte",
+      "href": "/frameworks",
       "label": "Framework"
     },
     {
-      "href": "src/routes/UI_libs/+page.svelte",
+      "href": "/UI_libs",
       "label": "UI Libraries"
     },
     {
-      "href": "src/routes/examples/+page.svelte",
+      "href": "/examples",
       "label": "Example websites"
     }
   ]
