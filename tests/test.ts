@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 import links from "../src/lib/links.json" assert { type: "json" };
 
 test.beforeEach(async ({ page }) => {
-  await page.goto("https://dev-links-lemon.vercel.app/");
+  await page.goto("http://localhost:4173/");
 });
 
 test("home page has expected title", async ({ page }) => {
