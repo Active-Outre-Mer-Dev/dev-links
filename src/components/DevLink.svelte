@@ -9,7 +9,6 @@
 
 <a
   href={link.href}
-  target="_top"
   class={`border border-gray-600 w-full text-center block rounded-md 
 bg-gray-800 px-6 py-4 hover:border-indigo-400 duration-200 ease-out hover:text-indigo-300`}
 >
