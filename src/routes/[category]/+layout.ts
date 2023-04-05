@@ -4,7 +4,7 @@ type Categories = keyof typeof json;
 
 export function load(event) {
   const category = event.params.category as Categories;
-  const categories = Object.entries(json).map(([, { href, label }]) => ({
+  const categories = Object.values(json).map(({ href, label }) => ({
     href,
     label,
     current: event.url.pathname === href

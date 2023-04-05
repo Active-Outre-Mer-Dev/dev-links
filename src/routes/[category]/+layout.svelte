@@ -2,8 +2,8 @@
   export let data;
 </script>
 
-<div class="flex pt-20 min-h-screen px-20 gap-10">
-  <aside class="basis-1/5">
+<div class="pt-20 min-h-screen px-20">
+  <aside class="w-1/5 fixed top-20 left-1/5 pr-20">
     <p class="text-neutral-200 mb-5 text-lg">Categories:</p>
     <ul class="space-y-4 border-b border-neutral-600 w-full pb-4">
       {#each data.categories as link}

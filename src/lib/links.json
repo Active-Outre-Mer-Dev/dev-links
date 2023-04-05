@@ -8,12 +8,52 @@
         "label": "MDN Web Docs"
       },
       {
+        "href": "https://web.dev/",
+        "label": "Web.dev"
+      },
+      {
+        "href": "https://react.dev/",
+        "label": "React"
+      },
+      {
         "href": "https://nextjs.org",
-        "label": "Next.Js"
+        "label": "Next.js"
       },
       {
         "href": "https://kit.svelte.dev/",
         "label": "SvelteKit"
+      },
+      {
+        "href": "https://tailwindcss.com/",
+        "label": "TailwindCSS"
+      },
+      {
+        "href": "https://pagespeed.web.dev/",
+        "label": "PageSpeed Insights"
+      },
+      {
+        "href": "https://firebase.google.com/",
+        "label": "Firebase"
+      },
+      {
+        "href": "https://planetscale.com/",
+        "label": "PlanetScale"
+      },
+      {
+        "href": "https://supabase.com/",
+        "label": "Supabase"
+      },
+      {
+        "href": "https://neon.tech/",
+        "label": "Neon"
+      },
+      {
+        "href": "https://upstash.com/",
+        "label": "Upstash"
+      },
+      {
+        "href": "https://www.mongodb.com/",
+        "label": "MongoDB"
       }
     ]
   },
@@ -32,6 +72,52 @@
       {
         "href": "https://www.canva.com/",
         "label": "Canva"
+      },
+      {
+        "href": "https://webflow.com/",
+        "label": "Webflow"
+      },
+      {
+        "href": "https://www.axure.com/",
+        "label": "Axure"
+      },
+      {
+        "href": "https://proto.io/",
+        "label": "Proto.io"
+      },
+      {
+        "href": "https://www.axure.com/",
+        "label": "Axure"
+      },
+      {
+        "href": "https://marvelapp.com/",
+        "label": "Marvel"
+      },
+      {
+        "href": "https://omatsuri.app/",
+        "label": "Omatsuri"
+      }
+    ]
+  },
+  "design-inspiration": {
+    "href": "/design-inspiration",
+    "label": "Design Inspiration",
+    "links": [
+      {
+        "href": "https://tailwindui.com/",
+        "label": "TailwindUI"
+      },
+      {
+        "href": "https://land-book.com/gallery",
+        "label": "Landbook"
+      },
+      {
+        "href": "https://godly.website/",
+        "label": "Godly"
+      },
+      {
+        "href": "https://nicepage.com/",
+        "label": "Nicepage"
       }
     ]
   },

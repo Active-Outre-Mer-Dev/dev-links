@@ -33,7 +33,7 @@
   on:mouseleave={leave}
   target={blank ? "_blank" : ""}
   href={link.href}
-  class={`border link duration-200 ease-out hover:border-primary-200 border-neutral-500 w-full flex 
+  class={`border link h-full duration-200 ease-out hover:border-primary-200 border-neutral-500 w-full flex 
   items-center justify-center text-center  rounded-md bg-gray-800 px-6 py-4 text-neutral-200
    hover:text-primary-100  relative overflow-hidden `}
 >
