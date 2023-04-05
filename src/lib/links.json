@@ -4,8 +4,16 @@
     "label": "Tech Resources",
     "links": [
       {
+        "href": "https://developer.mozilla.org/en-US/",
+        "label": "MDN Web Docs"
+      },
+      {
         "href": "https://nextjs.org",
         "label": "Next.Js"
+      },
+      {
+        "href": "https://kit.svelte.dev/",
+        "label": "SvelteKit"
       }
     ]
   },

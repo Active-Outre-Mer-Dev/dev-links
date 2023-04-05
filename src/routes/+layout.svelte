@@ -1,11 +1,9 @@
 <script>
   import "./styles.css";
   import "@fontsource/fira-mono";
-  import "@fontsource/montserrat"
+  import "@fontsource/montserrat";
 </script>
 
 <div class="bg-neutral-800 text-neutral-100">
-  <main>
-    <slot />
-  </main>
+  <slot />
 </div>
