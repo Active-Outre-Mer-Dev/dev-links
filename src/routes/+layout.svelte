@@ -6,7 +6,7 @@
 
 <div class="bg-neutral-800 text-neutral-100">
   <slot />
-  <footer class="py-5 px-20 flex justify-between border-t border-neutral-700 text-neutral-300">
+  <footer class="py-5 px-5 lg:px-20 flex justify-between border-t border-neutral-700 text-neutral-300">
     <p>Built by AOMDev</p>
     <a title="Github" aria-label="Github page" target="_blank" href="https://github.com/Active-Outre-Mer-Dev">
       <svg
