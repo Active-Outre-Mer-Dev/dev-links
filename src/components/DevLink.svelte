@@ -35,8 +35,28 @@
   href={link.href}
   class={`border link h-full duration-200 ease-out hover:border-primary-200 border-neutral-500 w-full flex 
   items-center justify-center text-center  rounded-md bg-gray-800 px-6 py-4 text-neutral-200
-   hover:text-primary-100  relative overflow-hidden `}
+   hover:text-primary-100 group  relative overflow-hidden `}
 >
+  {#if blank}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class={`absolute top-2 right-2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
+      duration-200 ease-out`}
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+      <path d="M10 14l10 -10" />
+      <path d="M15 4l5 0l0 5" />
+    </svg>
+  {/if}
   <span
     style={`background: radial-gradient(99.97% 99.55% at ${$percentage.x}% ${$percentage.y}%, #37245c 0%, rgba(48, 37, 76, 0) 100%);
   `}
