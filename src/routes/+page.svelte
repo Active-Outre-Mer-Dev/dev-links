@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import DevLink from "../components/DevLink.svelte";
   export let data;
 </script>

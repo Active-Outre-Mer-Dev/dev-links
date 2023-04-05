@@ -11,6 +11,7 @@
   import { cubicOut } from "svelte/easing";
 
   export let link: LinkData;
+  export let blank = false;
 
   let anchor: HTMLAnchorElement;
   const percentage = tweened({ x: 2.17, y: 40 }, { duration: 250, easing: cubicOut });
@@ -30,6 +31,7 @@
   bind:this={anchor}
   on:mousemove={move}
   on:mouseleave={leave}
+  target={blank ? "_blank" : ""}
   href={link.href}
   class={`border link duration-200 ease-out hover:border-primary-200 border-neutral-500 w-full flex 
   items-center justify-center text-center  rounded-md bg-gray-800 px-6 py-4 text-neutral-200

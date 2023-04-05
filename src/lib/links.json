@@ -1,40 +1,22 @@
 {
-  "tech": [
-    {
-      "href": "/basics",
-      "label": "Basic requirements"
-    },
-    {
-      "href": "/designs",
-      "label": "Design tools"
-    },
-    {
-      "href": "/colors",
-      "label": "Color palettes"
-    },
-    {
-      "href": "/SVGs",
-      "label": "SVG Designs"
-    },
-    {
-      "href": "/fonts",
-      "label": "Fonts"
-    },
-    {
-      "href": "/docs",
-      "label": "Documentation"
-    },
-    {
-      "href": "/frameworks",
-      "label": "Framework"
-    },
-    {
-      "href": "/UI_libs",
-      "label": "UI Libraries"
-    },
-    {
-      "href": "/examples",
-      "label": "Example websites"
-    }
-  ]
+  "tech": {
+    "href": "/tech",
+    "label": "Tech Resources",
+    "links": [
+      {
+        "href": "https://nextjs.org",
+        "label": "Next.Js"
+      }
+    ]
+  },
+  "design": {
+    "href": "/design",
+    "label": "Design Insipiration",
+    "links": [
+      {
+        "href": "https://nextjs.org",
+        "label": "Next.Js"
+      }
+    ]
+  }
 }
