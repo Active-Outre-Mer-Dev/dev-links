@@ -25,8 +25,8 @@
   </div>
 </section>
 <section class="flex flex-col items-center pb-20">
-  <h2 class="text-4xl mb-5">Categories</h2>
-  <div class="flex gap-4 w-3/6 flex-wrap">
+  <h2 class="text-4xl mb-7">Categories</h2>
+  <div class="link-grid gap-4 w-3/6">
     {#each data.links as link}
       <div class="basis-1/4 grow">
         <DevLink {link} />
@@ -36,4 +36,9 @@
 </section>
 
 <style>
+  .link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(150px, 1fr);
+  }
 </style>
