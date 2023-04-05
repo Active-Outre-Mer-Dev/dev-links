@@ -4,6 +4,10 @@
   console.log(data);
 </script>
 
+<svelte:head>
+  <title>DevLinks | {data.label}</title>
+</svelte:head>
+
 <main class="min-h-screen pt-20">
   <h1 class="text-center text-6xl mb-10">{data.label}</h1>
   <section class="flex items-center flex-col">
