@@ -1,40 +1,84 @@
 {
-  "tech": [
-    {
-      "href": "/basics",
-      "label": "Basic requirements"
-    },
-    {
-      "href": "/designs",
-      "label": "Design tools"
-    },
-    {
-      "href": "/colors",
-      "label": "Color palettes"
-    },
-    {
-      "href": "/SVGs",
-      "label": "SVG Designs"
-    },
-    {
-      "href": "/fonts",
-      "label": "Fonts"
-    },
-    {
-      "href": "/docs",
-      "label": "Documentation"
-    },
-    {
-      "href": "/frameworks",
-      "label": "Framework"
-    },
-    {
-      "href": "/UI_libs",
-      "label": "UI Libraries"
-    },
-    {
-      "href": "/examples",
-      "label": "Example websites"
-    }
-  ]
+  "tech": {
+    "href": "/tech",
+    "label": "Tech Resources",
+    "links": [
+      {
+        "href": "https://nextjs.org",
+        "label": "Next.Js"
+      }
+    ]
+  },
+  "design": {
+    "href": "/design",
+    "label": "Design Tools",
+    "links": [
+      {
+        "href": "https://www.figma.com/",
+        "label": "Figma"
+      },
+      {
+        "href": "https://www.invisionapp.com/",
+        "label": "InVision Studio"
+      },
+      {
+        "href": "https://www.canva.com/",
+        "label": "Canva"
+      }
+    ]
+  },
+  "fonts": {
+    "href": "/fonts",
+    "label": "Fonts",
+    "links": [
+      {
+        "href": "https://fonts.google.com/",
+        "label": "Google Fonts"
+      },
+      {
+        "href": "https://fonts.adobe.com/",
+        "label": "Adobe Fonts"
+      },
+      {
+        "href": "https://www.fontsquirrel.com/",
+        "label": "Font Squirrel"
+      }
+    ]
+  },
+  "colors": {
+    "href": "/colors",
+    "label": "Colors",
+    "links": [
+      {
+        "href": "https://coolors.co/",
+        "label": "Coolors"
+      },
+      {
+        "href": "https://color.adobe.com/create/color-wheel",
+        "label": "Adobe Color"
+      },
+      {
+        "href": "https://smart-swatch.netlify.app/",
+        "label": "Smart Swatch"
+      }
+    ]
+  },
+  "svgs": {
+    "href": "/svgs",
+    "label": "SVG Designs",
+    "links": [
+      {
+        "href": "https://haikei.app/",
+        "label": "Haikei"
+      },
+      {
+        "href": "https://www.heropatterns.com/",
+        "label": "Hero Patterns"
+      },
+      {
+        "href": "https://vectr.com/",
+        "label": "Vectr"
+      }
+    ]
+  }
 }

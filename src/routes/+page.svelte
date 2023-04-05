@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import DevLink from "../components/DevLink.svelte";
   export let data;
 </script>
@@ -26,15 +26,14 @@
 </section>
 <section class="flex flex-col items-center pb-20">
   <h2 class="text-4xl mb-5">Categories</h2>
-  <div class="grid link-grid grid-cols-3 gap-4 w-3/6">
+  <div class="flex gap-4 w-3/6 flex-wrap">
     {#each data.links as link}
-      <DevLink {link} />
+      <div class="basis-1/4 grow">
+        <DevLink {link} />
+      </div>
     {/each}
   </div>
 </section>
 
 <style>
-  .link-grid {
-    grid-auto-rows: 150px;
-  }
 </style>

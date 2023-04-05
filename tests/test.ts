@@ -10,14 +10,17 @@ test("home page has expected title", async ({ page }) => {
 });
 
 test("Links are visible", async ({ page }) => {
-  const promises = links.tech.map(async link => {
+  const values = Object.values(links);
+  const promises = values.map(async link => {
     return expect(page.getByRole("link", { name: link.label })).toBeVisible();
   });
   await Promise.all(promises);
 });
 
 test("Links have correct href", async ({ page }) => {
-  const promises = links.tech.map(async link => {
+  const values = Object.values(links);
+
+  const promises = values.map(async link => {
     return expect(await page.getByRole("link", { name: link.label }).getAttribute("href")).toBe(link.href);
   });
   await Promise.all(promises);
