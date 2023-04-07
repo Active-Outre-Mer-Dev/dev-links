@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import AlgoliaSearch from "./AlgoliaSearch.svelte";
+
+  let AlgoliaSearch: any;
 
   let showSearch = false;
   let init = false;
@@ -18,8 +19,16 @@
   const onClose = () => {
     showSearch = false;
   };
+  const dynamicImport = async () => {
+    AlgoliaSearch = (await import("./AlgoliaSearch.svelte")).default;
+  };
+  $: {
+    if (init) {
+      dynamicImport();
+    }
+  }
 </script>
 
 {#if showSearch}
-  <AlgoliaSearch {onClose} />
+  <svelte:component this={AlgoliaSearch} {onClose} />
 {/if}
