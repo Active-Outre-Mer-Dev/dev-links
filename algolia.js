@@ -6,7 +6,7 @@ import crypto from "node:crypto";
 
 dotenv.config({ path: path.join(process.cwd(), ".env.local") });
 
-const client = algoliasearch(process.env.ALGOLIA_APPLICATION_ID, process.env.ALGOLIA_ADMIN_KEY);
+const client = algoliasearch(process.env.PUBLIC_ALGOLIA_APPLICATION_ID, process.env.ALGOLIA_ADMIN_KEY);
 const index = client.initIndex("devlinks");
 
 const test = Object.values(json)

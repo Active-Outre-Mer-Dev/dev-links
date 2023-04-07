@@ -34,6 +34,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/montserrat": "^4.5.14",
-		"algoliasearch": "^4.17.0"
+		"algoliasearch": "^4.17.0",
+		"instantsearch.js": "^4.54.0"
 	}
 }
