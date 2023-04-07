@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import AlgoliaSearch from "./AlgoliaSearch.svelte";
 
-  let showSearch = true;
+  let showSearch = false;
   let init = false;
   onMount(() => {
     const focus = (e: KeyboardEvent) => {
@@ -16,8 +16,8 @@
     return () => window.removeEventListener("keydown", focus);
   });
   const onClose = () => {
-    showSearch = false
-  }
+    showSearch = false;
+  };
 </script>
 
 {#if showSearch}
