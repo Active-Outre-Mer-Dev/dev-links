@@ -34,7 +34,7 @@
 </script>
 
 <header
-  class="border-b flex items-center justify-center border-neutral-700 bg-neutral-800/50 h-16 w-full sticky top-0 left-0 backdrop-blur-sm"
+  class="border-b z-50 flex items-center justify-center border-neutral-700 bg-neutral-800/50 h-16 w-full sticky top-0 left-0 backdrop-blur-sm"
 >
   <div class="w-4/5 justify-between flex items-center h-full">
     <div>
