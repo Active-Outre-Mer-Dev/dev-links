@@ -6,6 +6,7 @@
 <svelte:head>
   <title>DevLinks</title>
   <meta name="description" content="Svelte demo app" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch.min.css">
 </svelte:head>
 
 <section class="flex flex-col items-center pt-20 mb-20">
