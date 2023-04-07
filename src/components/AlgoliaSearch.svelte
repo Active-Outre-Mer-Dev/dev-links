@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import algoliaSearch from "algoliasearch";
-  import { PUBLIC_ALGOLIA_APPLICATION_ID, PUBLIC_ALGOLIA_SEARCH_KEY } from "$env/static/public";
   import instantsearch from "instantsearch.js";
   import { hits, searchBox } from "instantsearch.js/es/widgets/";
   import { item } from "$lib/algolia-template";
@@ -10,9 +9,12 @@
 
   export let onClose: () => void;
 
+  const appId = import.meta.env.VITE_ALGOLIA_APPLICATION_ID;
+  const searchKey = import.meta.env.VITE_ALGOLIA_SEARCH_KEY;
+
   const testSearch = instantsearch({
     indexName: "devlinks",
-    searchClient: algoliaSearch(PUBLIC_ALGOLIA_APPLICATION_ID, PUBLIC_ALGOLIA_SEARCH_KEY)
+    searchClient: algoliaSearch(appId, searchKey)
   });
 
   let hitsContainer: HTMLDivElement;
