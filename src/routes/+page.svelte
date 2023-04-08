@@ -6,12 +6,16 @@
 <svelte:head>
   <title>DevLinks</title>
   <meta name="description" content="Svelte demo app" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch.min.css">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch.min.css"
+  />
 </svelte:head>
 
 <section class="flex flex-col items-center pt-20 mb-20">
   <h1 class="text-center text-6xl mb-10">DevLinks</h1>
-  <div class="w-11/12 lg:w-3/6 space-y-4 mb-4 text-lg text-neutral-200">
+  <div class="w-11/12 lg:w-3/6 space-y-4 mb-4 text-lg text-neutral-900 dark:text-neutral-200">
     <p>
       Whether you're a seasoned developer or just getting started, our site provides links to a variety of
       websites and tools that can aid in your web development projects. From color palette generators and font

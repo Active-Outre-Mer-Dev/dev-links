@@ -7,12 +7,13 @@
     theme = nextTheme;
     const html = document.getElementsByTagName("html")[0];
     html.classList.replace(prevTheme, nextTheme);
+    html.style.colorScheme = nextTheme;
   };
 </script>
 
 <button
   on:click={onToggle}
-  class={`active:top-[2px] relative ${theme === "dark" ? "text-primary-200c" : "text-primary-700"}`}
+  class={`active:top-[2px] relative ${theme === "dark" ? "text-primary-200" : "text-primary-700"}`}
 >
   {#if theme === "dark"}
     <svg

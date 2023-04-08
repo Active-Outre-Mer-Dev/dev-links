@@ -35,7 +35,7 @@
 </script>
 
 <header
-  class="border-b z-50 flex items-center justify-center border-neutral-700 bg-neutral-800/50 h-16 w-full sticky top-0 left-0 backdrop-blur-sm"
+  class="border-b duration-200 ease-out z-50 flex items-center justify-center bg-neutral-50/50 border-neutral-100 dark:border-neutral-700 dark:bg-neutral-800/50 h-16 w-full sticky top-0 left-0 backdrop-blur-sm"
 >
   <div class="w-4/5 justify-between flex items-center h-full">
     <div>
@@ -45,9 +45,9 @@
       <button
         on:click={onOpen}
         class={`rounded-full  h-3/4 px-8 gap-8  flex items-center justify-between
-         bg-neutral-900 border border-neutral-700`}
+         bg-neutral-100 border-neutral-200 dark:bg-neutral-900 border dark:border-neutral-700`}
       >
-        <div class="space-x-2 text-neutral-400">
+        <div class="space-x-2 text-neutral-600 dark:text-neutral-400">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="inline-block"
@@ -66,9 +66,14 @@
           </svg>
           <span> Search </span>
         </div>
-        <div class="text-neutral-300">
-          <kbd class="bg-neutral-800 p-1 w-5 h-5 text-xs rounded-sm uppercase">Ctrl</kbd>
-          <kbd class="bg-neutral-800 p-1 w-5 h-5 text-xs rounded-sm">K</kbd>
+        <div class="duration-200 ease-out text-neutral-500 dark:text-neutral-300">
+          <kbd
+            class="bg-neutral-50 duration-200 ease-out dark:bg-neutral-800 p-1 w-5 h-5 text-xs rounded-sm uppercase"
+            >Ctrl</kbd
+          >
+          <kbd class="bg-neutral-50 duration-200 ease-out dark:bg-neutral-800 p-1 w-5 h-5 text-xs rounded-sm"
+            >K</kbd
+          >
         </div>
       </button>
       <ThemeToggle />
