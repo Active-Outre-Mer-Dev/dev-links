@@ -33,9 +33,9 @@
   on:mouseleave={leave}
   target={blank ? "_blank" : ""}
   href={link.href}
-  class={`border link h-full duration-200 ease-out hover:border-primary-200 border-neutral-500 w-full flex 
-  items-center justify-center text-center  rounded-md bg-gray-800 px-6 py-4 text-neutral-200
-   hover:text-primary-100 group  relative overflow-hidden `}
+  class={`border link h-full duration-200 ease-out hover:border-primary-600 dark:hover:border-primary-200 border-neutral-300 dark:border-neutral-500 w-full flex 
+  items-center justify-center text-center  rounded-md px-6 py-4 text-neutral-800 dark:text-neutral-200
+   hover:text-primary-600 dark:hover:text-primary-100 group  relative overflow-hidden `}
 >
   {#if blank}
     <svg
@@ -60,7 +60,7 @@
   <span
     style={`background: radial-gradient(99.97% 99.55% at ${$percentage.x}% ${$percentage.y}%, #37245c 0%, rgba(48, 37, 76, 0) 100%);
   `}
-    class="w-2/3 h-2/3 absolute -top-2 -left-2 blur-lg rounded-full"
+    class="w-2/3 h-2/3 absolute dark:block hidden -top-2 -left-2 blur-lg rounded-full"
     aria-hidden="true"
   />
   <span class="text-center text-xl relative">{link.label}</span>
