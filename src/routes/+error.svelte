@@ -2,6 +2,10 @@
   import { page } from "$app/stores";
 </script>
 
+<svelte:head>
+  <title>404 - Page Not Found</title>
+</svelte:head>
+
 <main class="flex items-center flex-col gap-4 justify-center container">
   <div class="text-center">
     <p class="text-base font-semibold text-primary-500">{$page.status}</p>
