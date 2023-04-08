@@ -13,7 +13,7 @@
           <a
             href={link.href}
             data-current={link.current}
-            class={`data-[current=true]:text-secondary-400
+            class={`data-[current=true]:dark:text-secondary-400
             data-[current=true]:text-secondary-600
              duration-200 ease-out`}
           >
