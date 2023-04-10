@@ -8,7 +8,7 @@
 </svelte:head>
 
 <main class="px-5 lg:px-0 lg:w-4/5 mb-20 lg:ml-auto">
-  <h1 class="text-6xl text-center lg:text-start mb-10">{data.label}</h1>
+  <h1 class="text-7xl text-center lg:text-start mb-10">{data.label}</h1>
   <section class="link-grid gap-4 w-full">
     {#each data.links as link}
       <div class="w-full">

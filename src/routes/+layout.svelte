@@ -1,11 +1,11 @@
 <script>
   import "./styles.css";
-  import "@fontsource/fira-mono";
-  import "@fontsource/montserrat";
+  import "@fontsource/inter";
+  import "@fontsource/familjen-grotesk";
   import Nav from "../components/Nav.svelte";
 </script>
 
-<div class="dark:bg-neutral-800 duration-200 ease-out dark:text-neutral-100">
+<div class="dark:bg-neutral-900 duration-200 ease-out dark:text-neutral-100">
   <Nav />
   <slot />
   <footer

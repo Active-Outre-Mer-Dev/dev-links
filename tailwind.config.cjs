@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
-  darkMode:'class',
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Montserrat", "Fira Mono"]
+        sans: ["Inter", "Segoe UI"],
+        heading: ["Familjen Grotesk"]
       }
     },
     colors: {
