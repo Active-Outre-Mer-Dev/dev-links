@@ -13,8 +13,8 @@
           <a
             href={link.href}
             data-current={link.current}
-            class={`data-[current=true]:dark:text-secondary-400
-            data-[current=true]:text-secondary-600
+            class={`data-[current=true]:dark:text-primary-300
+            data-[current=true]:text-primary-600
              duration-200 ease-out`}
           >
             {link.label}

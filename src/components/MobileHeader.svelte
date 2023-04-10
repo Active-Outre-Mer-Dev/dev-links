@@ -15,7 +15,7 @@
 </script>
 
 <div
-  class="bg-neutral-700 sticky flex justify-between items-center px-5 top-0 left-0 z-50 lg:hidden h-16 w-full mb-20"
+  class="bg-neutral-900 border-b border-neutral-700 sticky flex justify-between items-center px-5 top-0 left-0 z-50 lg:hidden h-16 w-full mb-20"
 >
   <p>{title}</p>
   <button aria-label="Open menu" on:click={onOpen}
@@ -41,7 +41,7 @@
 {#if drawer}
   <div
     transition:fly={{ x: screen.width, duration: 200 }}
-    class="fixed w-full pt-20 flex flex-col items-center top-0 left-0 z-50 h-screen bg-neutral-700 border-r-neutral-500 border-r"
+    class="fixed w-full pt-20 flex flex-col items-center top-0 left-0 z-50 h-screen bg-neutral-800 border-r-neutral-500 border-r"
   >
     <button aria-label="Close menu" class="fixed top-4 right-4" on:click={onClose}
       ><svg

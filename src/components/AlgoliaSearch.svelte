@@ -40,7 +40,7 @@
       autofocus: true,
       cssClasses: {
         input:
-          "w-full outline-none appearance-none border-1 rounded-sm pl-4 py-2 border-neutral-500 relative bg-neutral-100 dark:bg-neutral-800",
+          "w-full outline-none appearance-none border-1 rounded-sm pl-4 py-2 border-neutral-500 relative bg-neutral-100 dark:bg-neutral-900",
         submitIcon: "absolute right-2 top-2/4 -translate-y-2/4 w-4 h-4 fill-neutral-300",
         root: "relative w-full",
         resetIcon: "absolute top-2/4 -translate-y-2/4 right-8 w-4 h-4 fill-neutral-500"
@@ -64,7 +64,7 @@
 >
   <div aria-hidden on:click={onClose} class="fixed top-0 left-0 w-full h-full" />
   <div
-    class="w-3/6 z-[55] bg-neutral-50 dark:bg-neutral-700 border-neutral-200 border dark:border-0 rounded-sm"
+    class="w-3/6 z-[55] bg-neutral-50 dark:bg-neutral-800 border-neutral-200 border dark:border-0 rounded-sm"
     transition:fly={{ y: 200, duration: 200, easing, delay: 0.2 }}
   >
     <div bind:this={searchContainer} id="algolia-search" class=" w-full" />

@@ -60,7 +60,7 @@
   <span
     style={`background: radial-gradient(99.97% 99.55% at ${$percentage.x}% ${$percentage.y}%, #37245c 0%, rgba(48, 37, 76, 0) 100%);
   `}
-    class="w-2/3 h-2/3 absolute dark:block hidden -top-2 -left-2 blur-lg rounded-full"
+    class="w-2/3 h-2/3 absolute dark:block hidden -top-2 opacity-75 -left-2 blur-lg rounded-full"
     aria-hidden="true"
   />
   <span class="text-center text-xl relative">{link.label}</span>
