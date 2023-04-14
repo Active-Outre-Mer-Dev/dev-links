@@ -1,15 +1,21 @@
 <script lang="ts">
   import { beforeNavigate, afterNavigate } from "$app/navigation";
   import { spring } from "svelte/motion";
+
   let progress = spring(0);
   let intervalId: NodeJS.Timer;
   let timeoutId: NodeJS.Timer;
+
   beforeNavigate(() => {
     clearTimeout(timeoutId);
     intervalId = setInterval(() => {
-      if ($progress === 90) return;
-      const randomUpdate = Math.floor(Math.random() * 80);
-      progress.update(n => n + randomUpdate);
+      if ($progress >= 85) return;
+      const randomUpdate = Math.floor(Math.random() * 50);
+      if ($progress + randomUpdate >= 80) {
+        progress.update(n => n + 10);
+      } else {
+        progress.update(n => n + randomUpdate);
+      }
     }, 500);
   });
 

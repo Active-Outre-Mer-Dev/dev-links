@@ -1,5 +1,5 @@
 import { error } from "@sveltejs/kit";
-import { getLinks, getCategories } from "$lib/notion.js";
+import { getCategories } from "$lib/notion.js";
 
 export async function load(event) {
   const route = event.params.category;
@@ -13,9 +13,6 @@ export async function load(event) {
   }
   return {
     label: current?.label,
-    streamed: {
-      links: getLinks(current.label)
-    },
     categories: categories.map(category => ({ ...category, current: category.href === route }))
   };
 }
