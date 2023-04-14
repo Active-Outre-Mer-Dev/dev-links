@@ -1,9 +1,9 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import ThemeToggle from "./ThemeToggle.svelte";
+  import NavigationProgress from "./NavigationProgress.svelte";
 
   let AlgoliaSearch: any;
-
   let showSearch = false;
   let init = false;
   onMount(() => {
@@ -34,6 +34,7 @@
   }
 </script>
 
+<NavigationProgress />
 <header
   class="border-b duration-200 ease-out hidden z-50 lg:flex items-center justify-center bg-neutral-50/50 border-neutral-100 dark:border-neutral-700 dark:bg-neutral-900/50 h-16 w-full sticky top-0 left-0 backdrop-blur-sm"
 >
