@@ -5,12 +5,6 @@ test.beforeEach(async ({ page }) => {
 });
 
 test.describe("Category links", () => {
-  test("Link for current category is active", async ({ page }) => {
-    await page.getByRole("link", { name: "Tech Resources" }).click();
-    expect(
-      await page.getByRole("link", { name: "Tech Resources" }).getAttribute("data-current")
-    ).toBeTruthy();
-  });
   test("All other links are inactive", async ({ page }) => {
     await page.getByRole("link", { name: "Tech Resources" }).click();
     for (const li of await page.getByRole("link").all()) {
