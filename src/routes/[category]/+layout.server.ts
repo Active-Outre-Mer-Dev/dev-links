@@ -1,12 +1,6 @@
 import { error } from "@sveltejs/kit";
 import { getLinks, getCategories } from "$lib/notion.js";
 
-export const prerender = true;
-export const config = {
-  isr: {
-    expiration: 60
-  }
-};
 export async function load(event) {
   const route = event.params.category;
   const categories = (await getCategories()).map(category => ({
