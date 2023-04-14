@@ -11,10 +11,11 @@ export async function load(event) {
   if (!current) {
     throw error(404, "Page not found");
   }
-  const links = await getLinks(current.label);
   return {
-    links,
     label: current?.label,
+    streamed: {
+      links: getLinks(current.label)
+    },
     categories: categories.map(category => ({ ...category, current: category.href === route }))
   };
 }

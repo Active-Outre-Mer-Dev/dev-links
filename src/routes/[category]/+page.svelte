@@ -1,6 +1,8 @@
 <script lang="ts">
   export let data;
   import DevLink from "../../components/DevLink.svelte";
+  import DevLinkLoad from "../../components/DevLinkLoad.svelte";
+  const defaultLinks = Array(4).fill(null);
 </script>
 
 <svelte:head>
@@ -10,11 +12,17 @@
 <main class="px-5 lg:px-0 lg:w-4/5 mb-20 lg:ml-auto">
   <h1 class="text-7xl text-center lg:text-start mb-10">{data.label}</h1>
   <section class="link-grid gap-4 w-full">
-    {#each data.links as link}
-      <div class="w-full">
-        <DevLink blank {link} />
-      </div>
-    {/each}
+    {#await data.streamed.links}
+      {#each defaultLinks as _}
+        <DevLinkLoad />
+      {/each}
+    {:then links}
+      {#each links as link}
+        <div class="w-full">
+          <DevLink {link} blank />
+        </div>
+      {/each}
+    {/await}
   </section>
 </main>
 
