@@ -14,7 +14,7 @@
   export let blank = false;
 
   let anchor: HTMLAnchorElement;
-  const percentage = tweened({ x: 2.17, y: 40 }, { duration: 250, easing: cubicOut });
+  const percentage = tweened({ x: 0, y: 0 }, { duration: 250, easing: cubicOut });
   const move = (e: HTMLEvent) => {
     const style = getComputedStyle(anchor);
     percentage.set({
@@ -23,7 +23,7 @@
     });
   };
   const leave = () => {
-    percentage.set({ x: 2.17, y: 40 });
+    percentage.set({ x: 0, y: 0 });
   };
 </script>
 
@@ -58,9 +58,9 @@
     </svg>
   {/if}
   <span
-    style={`background: radial-gradient(99.97% 99.55% at ${$percentage.x}% ${$percentage.y}%, #37245c 0%, rgba(48, 37, 76, 0) 100%);
+    style={`background: radial-gradient(circle at ${$percentage.x}% ${$percentage.y}%, #37245c, rgba(48, 37, 76, 0) 50%);
   `}
-    class="w-2/3 h-2/3 absolute dark:block hidden -top-2 opacity-75 -left-2 blur-lg rounded-full"
+    class="w-full h-full absolute dark:block hidden top-0 opacity-75 blur-lg left-0"
     aria-hidden="true"
   />
   <span class="text-center text-xl relative">{link.label}</span>
