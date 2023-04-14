@@ -1,13 +1,16 @@
 import { Client } from "@notionhq/client";
-import { NOTION_SECRET, NOTION_CATEGORIES_ID } from "$env/static/private";
 import type {
   TitlePropertyItemObjectResponse,
   TableBlockObjectResponse,
   TableRowBlockObjectResponse
 } from "@notionhq/client/build/src/api-endpoints";
+import dotenv from "dotenv";
+import path from "path";
 
-const notion = new Client({ auth: NOTION_SECRET });
-const categoriesDB = NOTION_CATEGORIES_ID;
+dotenv.config({ path: path.join(process.cwd(), ".env.local") });
+
+const notion = new Client({ auth: process.env.NOTION_SECRET });
+const categoriesDB = process.env.NOTION_CATEGORIES_ID!;
 
 type NotionResponse = {
   results: CategoriesDB[];
