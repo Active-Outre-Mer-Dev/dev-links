@@ -247,3 +247,12 @@ These websites provide a variety of documentation for different programming lang
 - Coming soon
 
 ---
+
+## Additions sections
+
+    These are the things to be added whenever possible
+
+- Pocketbase = Database
+- Notion = Planning
+
+---
