@@ -40,7 +40,8 @@
   {#if blank}
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class={`absolute top-2 right-2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
+      aria-hidden="true"
+      class={`absolute top-2 right-2 z-[5] pointer-events-none translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 
       duration-200 ease-out`}
       width="24"
       height="24"
@@ -63,5 +64,7 @@
     class="w-full h-full absolute dark:block hidden top-0 opacity-75 blur-lg left-0"
     aria-hidden="true"
   />
-  {link.label}
+  <span class="relative pointer-events-none">
+    {link.label}
+  </span>
 </a>
