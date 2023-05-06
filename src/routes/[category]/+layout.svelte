@@ -7,7 +7,9 @@
   <MobileHeader links={data.categories} title={data.label} />
   <aside class="w-1/5 hidden lg:block fixed top-20 left-1/5 lg:pr-20">
     <p class="text-neutral-500 dark:text-neutral-200 mb-5 text-lg">Categories:</p>
-    <ul class="space-y-4 border-b border-neutral-300 dark:border-neutral-600 w-full pb-4">
+    <ul
+      class="space-y-4 scroll-container border-b h-72 overflow-y-scroll border-neutral-300 dark:border-neutral-600 w-full pb-4"
+    >
       {#each data.categories as link}
         <li>
           <a
