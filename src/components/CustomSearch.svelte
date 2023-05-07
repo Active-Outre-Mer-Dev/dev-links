@@ -64,6 +64,7 @@
     <input
       bind:this={input}
       bind:value={search}
+      placeholder="Search..."
       type="search"
       id="algolia-search"
       class={`w-full outline-none appearance-none border-1 rounded-sm pl-4 py-2 border-neutral-500 
