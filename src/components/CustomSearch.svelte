@@ -72,27 +72,31 @@
     />
     <div id="algolia-hits" class=" h-96 pt-4 px-4 overflow-y-scroll">
       {#if search}
-        <ul class="space-y-4">
-          {#each filteredLinks.slice(0, 5) as link}
-            <li>
-              <p class="text-lg mb-2 text-neutral-300 capitalize">{link[0].replaceAll("-", " ")}</p>
-              <ul class="space-y-2">
-                {#each link[1].links.slice(0, 5) as resource}
-                  <li class="hover:bg-neutral-700 p-2">
-                    <a href={resource.href}>
-                      <span class="block">
-                        {resource.label}
-                      </span>
-                      <span>
-                        {resource.href}
-                      </span>
-                    </a>
-                  </li>
-                {/each}
-              </ul>
-            </li>
-          {/each}
-        </ul>
+        {#if filteredLinks.length === 0}
+          <p>No results found.</p>
+        {:else}
+          <ul class="space-y-4">
+            {#each filteredLinks.slice(0, 5) as link}
+              <li>
+                <p class="text-lg mb-2 text-neutral-300 capitalize">{link[0].replaceAll("-", " ")}</p>
+                <ul class="space-y-2">
+                  {#each link[1].links.slice(0, 5) as resource}
+                    <li class="hover:bg-neutral-700 rounded-sm">
+                      <a target="_blank" href={resource.href} class="flex flex-col p-2">
+                        <span>
+                          {resource.label}
+                        </span>
+                        <span>
+                          {resource.href}
+                        </span>
+                      </a>
+                    </li>
+                  {/each}
+                </ul>
+              </li>
+            {/each}
+          </ul>
+        {/if}
       {:else}
         <ul class="space-y-4">
           {#each filteredLinks.slice(0, 5) as link}
@@ -100,8 +104,8 @@
               <p class="text-lg mb-2 text-neutral-300 capitalize">{link[0].replaceAll("-", " ")}</p>
               <ul class="space-y-2">
                 {#each link[1].links.slice(0, 5) as resource}
-                  <li class="hover:bg-neutral-700">
-                    <a target="_blank" href={resource.href} class="flex flex-col p-2 rounded-sm">
+                  <li class="hover:bg-neutral-700 rounded-sm">
+                    <a target="_blank" href={resource.href} class="flex flex-col p-2">
                       <span>
                         {resource.label}
                       </span>
