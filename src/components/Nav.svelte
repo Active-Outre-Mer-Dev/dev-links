@@ -2,10 +2,8 @@
   import { onMount } from "svelte";
   import ThemeToggle from "./ThemeToggle.svelte";
   import NavigationProgress from "./NavigationProgress.svelte";
+  import CustomSearch from "./CustomSearch.svelte";
 
-  let AlgoliaSearch: any;
-  let showSearch = false;
-  let init = false;
   onMount(() => {
     const focus = (e: KeyboardEvent) => {
       if (e.ctrlKey && e.key === "k") {
@@ -17,6 +15,10 @@
     window.addEventListener("keydown", focus);
     return () => window.removeEventListener("keydown", focus);
   });
+
+  let showSearch = false;
+  let init = false;
+
   const onClose = () => {
     showSearch = false;
   };
@@ -24,14 +26,6 @@
     showSearch = true;
     if (!init) init = true;
   };
-  const dynamicImport = async () => {
-    AlgoliaSearch = (await import("./AlgoliaSearch.svelte")).default;
-  };
-  $: {
-    if (init) {
-      dynamicImport();
-    }
-  }
 </script>
 
 <NavigationProgress />
@@ -82,5 +76,5 @@
   </div>
 </header>
 {#if showSearch}
-  <svelte:component this={AlgoliaSearch} {onClose} />
+  <CustomSearch {onClose} />
 {/if}

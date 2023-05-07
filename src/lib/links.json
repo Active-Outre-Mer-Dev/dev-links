@@ -1,177 +1,277 @@
 {
-  "tech": {
-    "href": "/tech",
-    "label": "Tech Resources",
+  "coding-practice": {
+    "href": "coding-practice",
+    "label": "Coding Practice",
     "links": [
       {
-        "href": "https://developer.mozilla.org/en-US/",
-        "label": "MDN Web Docs"
+        "label": "HackerRank",
+        "href": "https://www.hackerrank.com/"
       },
       {
-        "href": "https://web.dev/",
-        "label": "Web.dev"
+        "label": "Leetcode",
+        "href": "https://leetcode.com/"
       },
       {
-        "href": "https://react.dev/",
-        "label": "React"
+        "label": "Codewars",
+        "href": "https://www.codewars.com/"
       },
       {
-        "href": "https://nextjs.org",
-        "label": "Next.js"
-      },
-      {
-        "href": "https://kit.svelte.dev/",
-        "label": "SvelteKit"
-      },
-      {
-        "href": "https://tailwindcss.com/",
-        "label": "TailwindCSS"
-      },
-      {
-        "href": "https://pagespeed.web.dev/",
-        "label": "PageSpeed Insights"
-      },
-      {
-        "href": "https://firebase.google.com/",
-        "label": "Firebase"
-      },
-      {
-        "href": "https://planetscale.com/",
-        "label": "PlanetScale"
-      },
-      {
-        "href": "https://supabase.com/",
-        "label": "Supabase"
-      },
-      {
-        "href": "https://neon.tech/",
-        "label": "Neon"
-      },
-      {
-        "href": "https://upstash.com/",
-        "label": "Upstash"
-      },
-      {
-        "href": "https://www.mongodb.com/",
-        "label": "MongoDB"
-      }
-    ]
-  },
-  "design": {
-    "href": "/design",
-    "label": "Design Tools",
-    "links": [
-      {
-        "href": "https://www.figma.com/",
-        "label": "Figma"
-      },
-      {
-        "href": "https://www.invisionapp.com/",
-        "label": "InVision Studio"
-      },
-      {
-        "href": "https://www.canva.com/",
-        "label": "Canva"
-      },
-      {
-        "href": "https://webflow.com/",
-        "label": "Webflow"
-      },
-      {
-        "href": "https://www.axure.com/",
-        "label": "Axure"
-      },
-      {
-        "href": "https://proto.io/",
-        "label": "Proto.io"
-      },
-      {
-        "href": "https://www.axure.com/",
-        "label": "Axure"
-      },
-      {
-        "href": "https://marvelapp.com/",
-        "label": "Marvel"
-      },
-      {
-        "href": "https://omatsuri.app/",
-        "label": "Omatsuri"
-      }
-    ]
-  },
-  "design-inspiration": {
-    "href": "/design-inspiration",
-    "label": "Design Inspiration",
-    "links": [
-      {
-        "href": "https://tailwindui.com/",
-        "label": "TailwindUI"
-      },
-      {
-        "href": "https://land-book.com/gallery",
-        "label": "Landbook"
-      },
-      {
-        "href": "https://godly.website/",
-        "label": "Godly"
-      },
-      {
-        "href": "https://nicepage.com/",
-        "label": "Nicepage"
-      }
-    ]
-  },
-  "fonts": {
-    "href": "/fonts",
-    "label": "Fonts",
-    "links": [
-      {
-        "href": "https://fonts.google.com/",
-        "label": "Google Fonts"
-      },
-      {
-        "href": "https://fonts.adobe.com/",
-        "label": "Adobe Fonts"
-      },
-      {
-        "href": "https://www.fontsquirrel.com/",
-        "label": "Font Squirrel"
+        "label": "Frontend Mentor",
+        "href": "https://www.frontendmentor.io/"
       }
     ]
   },
   "colors": {
-    "href": "/colors",
+    "href": "colors",
     "label": "Colors",
     "links": [
       {
-        "href": "https://coolors.co/",
-        "label": "Coolors"
+        "label": "Smart Swatch",
+        "href": "https://smart-swatch.netlify.app/"
       },
       {
-        "href": "https://color.adobe.com/create/color-wheel",
-        "label": "Adobe Color"
+        "label": "Coolors",
+        "href": "https://coolors.co/"
       },
       {
-        "href": "https://smart-swatch.netlify.app/",
-        "label": "Smart Swatch"
+        "label": "Adobe Color",
+        "href": "https://color.adobe.com/create/color-wheel"
       }
     ]
   },
-  "svgs": {
-    "href": "/svgs",
-    "label": "SVG Designs",
+  "database": {
+    "href": "database",
+    "label": "Database",
     "links": [
       {
-        "href": "https://haikei.app/",
-        "label": "Haikei"
+        "label": "PlanetScale",
+        "href": "https://planetscale.com/"
       },
       {
-        "href": "https://www.heropatterns.com/",
-        "label": "Hero Patterns"
+        "label": "Upstash",
+        "href": "https://upstash.com/"
       },
       {
-        "href": "https://vectr.com/",
-        "label": "Vectr"
+        "label": "Supabase",
+        "href": "https://supabase.com/"
+      },
+      {
+        "label": "Firebase",
+        "href": "https://firebase.google.com/"
+      },
+      {
+        "label": "MongoDB",
+        "href": "https://www.mongodb.com/"
+      }
+    ]
+  },
+  "design-inspiration": {
+    "href": "design-inspiration",
+    "label": "Design Inspiration",
+    "links": [
+      {
+        "label": "TailwindUI",
+        "href": "https://tailwindui.com/"
+      },
+      {
+        "label": "Landbook",
+        "href": "https://land-book.com/gallery"
+      },
+      {
+        "label": "Godly website",
+        "href": "https://godly.website/"
+      },
+      {
+        "label": "Nicepage",
+        "href": "https://nicepage.com/"
+      }
+    ]
+  },
+  "design-tools": {
+    "href": "design-tools",
+    "label": "Design Tools",
+    "links": [
+      {
+        "label": "Figma",
+        "href": "https://www.figma.com/"
+      },
+      {
+        "label": "Excalidraw",
+        "href": "https://excalidraw.com/"
+      },
+      {
+        "label": "Omatsuri",
+        "href": "https://omatsuri.app/"
+      },
+      {
+        "label": "InVision",
+        "href": "https://www.invisionapp.com/"
+      },
+      {
+        "label": "Canva",
+        "href": "https://www.canva.com/"
+      },
+      {
+        "label": "Webflow",
+        "href": "https://webflow.com/"
+      },
+      {
+        "label": "Axure",
+        "href": "https://www.axure.com/"
+      },
+      {
+        "label": "Proto.io",
+        "href": "https://proto.io/"
+      },
+      {
+        "label": "LGC Type Scale",
+        "href": "https://www.layoutgridcalculator.com/type-scale/"
+      },
+      {
+        "label": "CSS Gradient Generator",
+        "href": "https://www.joshwcomeau.com/gradient-generator/"
+      }
+    ]
+  },
+  "developer-tools": {
+    "href": "developer-tools",
+    "label": "Developer tools",
+    "links": [
+      {
+        "label": "Github",
+        "href": "https://github.com/"
+      },
+      {
+        "label": "PageSpeed Insights",
+        "href": "https://pagespeed.web.dev/"
+      },
+      {
+        "label": "Mockaroo",
+        "href": "https://www.mockaroo.com/"
+      },
+      {
+        "label": "DrawSQL",
+        "href": "https://drawsql.app/"
+      },
+      {
+        "label": "Cloudinary",
+        "href": "https://cloudinary.com/"
+      },
+      {
+        "label": "Sanity",
+        "href": "https://www.sanity.io/"
+      },
+      {
+        "label": "Contentful",
+        "href": "https://www.contentful.com/"
+      }
+    ]
+  },
+  "fonts": {
+    "href": "fonts",
+    "label": "Fonts",
+    "links": [
+      {
+        "label": "Google Fonts",
+        "href": "https://fonts.google.com"
+      },
+      {
+        "label": "Adobe Fonts",
+        "href": "https://fonts.adobe.com"
+      },
+      {
+        "label": "Font Squirrel",
+        "href": "https://www.fontsquirrel.com"
+      }
+    ]
+  },
+  "media-tools": {
+    "href": "media-tools",
+    "label": "Media Tools",
+    "links": [
+      {
+        "label": "Haikei",
+        "href": "https://haikei.app/"
+      },
+      {
+        "label": "PixEdit",
+        "href": "https://pix-edit.vercel.app/"
+      },
+      {
+        "label": "Pexels",
+        "href": "https://www.pexels.com/"
+      },
+      {
+        "label": "Hero Patterns",
+        "href": "https://www.heropatterns.com/"
+      },
+      {
+        "label": "Vectr",
+        "href": "https://vectr.com/"
+      }
+    ]
+  },
+  "playgrounds": {
+    "href": "playgrounds",
+    "label": "Playgrounds",
+    "links": [
+      {
+        "label": "Vercel AI Playground",
+        "href": "https://play.vercel.ai/"
+      },
+      {
+        "label": "TailwindCSS Playground",
+        "href": "https://play.tailwindcss.com/"
+      },
+      {
+        "label": "Svelte Playground",
+        "href": "https://svelte.dev/repl/"
+      },
+      {
+        "label": "TypeScript Playground",
+        "href": "https://www.typescriptlang.org/play"
+      }
+    ]
+  },
+  "tech-resources": {
+    "href": "tech-resources",
+    "label": "Tech Resources",
+    "links": [
+      {
+        "label": "MDN",
+        "href": "https://developer.mozilla.org/en-US/"
+      },
+      {
+        "label": "Web.dev",
+        "href": "https://web.dev/"
+      },
+      {
+        "label": "React",
+        "href": "https://react.dev/"
+      },
+      {
+        "label": "Next.js",
+        "href": "https://nextjs.org"
+      },
+      {
+        "label": "SvelteKit",
+        "href": "https://kit.svelte.dev/"
+      },
+      {
+        "label": "TailwindCSS",
+        "href": "https://tailwindcss.com/"
+      },
+      {
+        "label": "Storybook",
+        "href": "https://storybook.js.org/"
+      },
+      {
+        "label": "Turbo",
+        "href": "https://turbo.build/"
+      },
+      {
+        "label": "JavaScript Info",
+        "href": "https://javascript.info/"
       }
     ]
   }
