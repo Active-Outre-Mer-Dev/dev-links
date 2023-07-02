@@ -1,6 +1,6 @@
 <script lang="ts">
   export let data;
-  import MobileHeader from "../../components/MobileHeader.svelte";
+  import MobileHeader from "../../../components/MobileHeader.svelte";
 </script>
 
 <div class="lg:pt-20 min-h-screen lg:px-20">

@@ -1,7 +1,7 @@
 <script lang="ts">
   export let data;
-  import DevLink from "../../components/DevLink.svelte";
-  import DevLinkLoad from "../../components/DevLinkLoad.svelte";
+  import DevLink from "../../../components/DevLink.svelte";
+  import DevLinkLoad from "../../../components/DevLinkLoad.svelte";
   const defaultLinks = Array(4).fill(null);
 </script>
 

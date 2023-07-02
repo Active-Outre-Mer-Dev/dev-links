@@ -1,6 +1,5 @@
 <script lang="ts">
   import DevLink from "../components/DevLink.svelte";
-  export let data;
 </script>
 
 <svelte:head>
@@ -28,17 +27,27 @@
       just need to find the right tool for a specific task, our website has you covered.
     </p>
   </div>
-</section>
-<section class="flex flex-col items-center pb-20">
-  <h2 class="text-5xl mb-7">Categories</h2>
-  <div class="link-grid gap-4 w-11/12 lg:w-3/6">
-    {#each data.links as link}
-      <div class="basis-1/4 grow">
-        <DevLink {link} />
-      </div>
-    {/each}
+  <div class="flex gap-6 mt-5">
+    <a
+      href={"/resources"}
+      class="px-4 h-10 flex items-center bg-primary-500 rounded-md font-medium text-primary-50"
+      >View Resources</a
+    >
+    <a href={"/articles"} class="bg-primary-50/10 px-4 flex items-center h-10 font-medium rounded-md"
+      >Read Articles</a
+    >
   </div>
 </section>
+
+<!-- <section class="flex flex-col items-center pb-20">
+  <h2 class="text-5xl mb-7">Categories</h2>
+  <div class="link-grid gap-4 w-11/12 lg:w-3/6">
+    <div class="basis-1/4 grow">
+      <DevLink link={{ label: "Resources", href: "/resources" }} />
+      <DevLink link={{ label: "Articles", href: "/articles" }} />
+    </div>
+  </div>
+</section> -->
 
 <style>
   .link-grid {
