@@ -1,5 +1,11 @@
 import { getLinks, getCategories } from "$lib/notion";
 import { json } from "@sveltejs/kit";
+import { Redis } from "@upstash/redis";
+
+const redis = new Redis({
+  url: process.env.UPSTASH_REDIS_REST_URL!,
+  token: process.env.UPSTASH_REDIS_REST_TOKEN!
+});
 
 export const POST = async ({ request }) => {
   const jsonData = await request.json();
@@ -7,8 +13,15 @@ export const POST = async ({ request }) => {
   if (!search) {
     return json({ message: "No results", data: [] }, { status: 400 });
   }
+  const redisKey = `links:${search.toLowerCase().trim().replaceAll(" ", "-")}`;
+  //First check redis cache and return if there is data
+  const result = await redis.get<string>(redisKey);
+  console.log(result);
+  if (result) {
+    return json({ message: "Nice", data: result }, { status: 200 });
+  }
+
   const categories = await getCategories();
-  //   console.log(categories);
   const allLinks = await Promise.all(
     categories.map(async ({ label }) => {
       return {
@@ -44,6 +57,7 @@ export const POST = async ({ request }) => {
         ];
       });
   }
-  console.log(links);
+  //Add result to redis for 1 hour for all subsequent searches with same value
+  await redis.set(redisKey, JSON.stringify(links), { ex: 60 * 60 });
   return json({ message: "Nice", data: links }, { status: 200 });
 };
