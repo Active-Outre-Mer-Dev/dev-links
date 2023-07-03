@@ -26,13 +26,10 @@
   const onChange = (data: any[]) => {
     results = data;
   };
-  $: {
-    console.log(Array.isArray(results));
-    console.log(results);
-  }
 </script>
 
 <div
+  aria-hidden="true"
   on:click={onClose}
   class="fixed z-50 top-0 left-0 w-full h-full flex items-center justify-center backdrop-blur-sm"
 />
@@ -42,10 +39,13 @@
 >
   <CommandInput {onChange} />
   <CommandList>
+    {#if results.length === 0}
+      <p>No results.</p>
+    {/if}
     {#each results as [category, links]}
       <CommandGroup heading={category}>
         {#each links as link}
-          <CommandItem>{link.label}</CommandItem>
+          <CommandItem value={link.href}>{link.label}</CommandItem>
         {/each}
       </CommandGroup>
     {/each}

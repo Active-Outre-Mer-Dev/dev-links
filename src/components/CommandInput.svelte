@@ -4,6 +4,7 @@
   let input: HTMLInputElement;
   let search = "";
   let timer: NodeJS.Timer;
+  let isLoading = false;
 
   export let onChange: (data: any[]) => void;
 
@@ -22,6 +23,7 @@
   const onSearch = async () => {
     clearTimeout(timer);
     timer = setTimeout(async () => {
+      isLoading = true;
       const res = await fetch("/api/links", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -30,6 +32,7 @@
       const json = await res.json();
       console.log(json.data);
       onChange(json.data);
+      isLoading = false;
     }, 1500);
   };
 
@@ -64,8 +67,7 @@
     class={`appearance-none h-12 outline-none grow block bg-wite dark:bg-neutral-800 
     dark:text-gray-200`}
   />
-
-  <button on:click={onReset} aria-label="Close command menu" class="basis-5 flex items-center justify-center">
+  <div class="flex items-center gap-2">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={16}
@@ -76,10 +78,46 @@
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="basis-5 text-gray-600 dark:text-gray-200"
+      data-loading={isLoading}
+      class={`animate-spin data-[loading=true]:opacity-100 opacity-0`}
+      ><line x1="12" x2="12" y1="2" y2="6" /><line x1="12" x2="12" y1="18" y2="22" /><line
+        x1="4.93"
+        x2="7.76"
+        y1="4.93"
+        y2="7.76"
+      /><line x1="16.24" x2="19.07" y1="16.24" y2="19.07" /><line x1="2" x2="6" y1="12" y2="12" /><line
+        x1="18"
+        x2="22"
+        y1="12"
+        y2="12"
+      /><line x1="4.93" x2="7.76" y1="19.07" y2="16.24" /><line
+        x1="16.24"
+        x2="19.07"
+        y1="7.76"
+        y2="4.93"
+      /></svg
     >
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>
-  </button>
+
+    <button
+      on:click={onReset}
+      aria-label="Close command menu"
+      class="basis-5 flex items-center justify-center"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={16}
+        height={16}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="basis-5 text-gray-600 dark:text-gray-200"
+      >
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </svg>
+    </button>
+  </div>
 </div>

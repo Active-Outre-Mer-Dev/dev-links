@@ -16,7 +16,7 @@ export const POST = async ({ request }) => {
   const redisKey = `links:${search.toLowerCase().trim().replaceAll(" ", "-")}`;
   //First check redis cache and return if there is data
   const result = await redis.get<string>(redisKey);
-  console.log(result);
+
   if (result) {
     return json({ message: "Nice", data: result }, { status: 200 });
   }
