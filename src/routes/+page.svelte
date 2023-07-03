@@ -1,7 +1,3 @@
-<script lang="ts">
-  import DevLink from "../components/DevLink.svelte";
-</script>
-
 <svelte:head>
   <title>DevLinks</title>
   <meta name="description" content="Svelte demo app" />

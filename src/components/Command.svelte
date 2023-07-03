@@ -3,7 +3,6 @@
   import CommandInput from "./CommandInput.svelte";
   import CommandItem from "./CommandItem.svelte";
   import CommandList from "./CommandList.svelte";
-  import { useCommand } from "$lib/command-store";
   import { onMount } from "svelte";
 
   onMount(() => {

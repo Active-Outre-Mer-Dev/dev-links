@@ -3,6 +3,16 @@
   export let data;
 </script>
 
+<svelte:head>
+  <title>DevLinks | Resources</title>
+  <meta name="description" content="Svelte demo app" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch.min.css"
+  />
+</svelte:head>
+
 <h1 class="font-heading text-5xl text-center font-medium mb-10 mt-20">Resources</h1>
 
 <div class="link-grid w-3/5 mx-auto gap-4 mb-36">

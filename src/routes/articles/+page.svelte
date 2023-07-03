@@ -2,6 +2,16 @@
   export let data;
 </script>
 
+<svelte:head>
+  <title>DevLinks | Articles</title>
+  <meta name="description" content="Svelte demo app" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch.min.css"
+  />
+</svelte:head>
+
 <h1 class="text-center font-medium font-heading text-5xl mb-10 mt-20">Articles</h1>
 <div class="mx-auto w-3/5 grid gap-20 mb-36">
   {#each data.articles as article}

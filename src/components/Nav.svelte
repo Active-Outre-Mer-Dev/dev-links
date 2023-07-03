@@ -16,7 +16,7 @@
     return () => window.removeEventListener("keydown", focus);
   });
 
-  let showSearch = true;
+  let showSearch = false;
   let init = false;
 
   const onClose = () => {
@@ -30,7 +30,7 @@
 
 <NavigationProgress />
 <header
-  class="border-b duration-200 ease-out hidden z-50 lg:flex items-center justify-center bg-neutral-50/50 border-neutral-100 dark:border-neutral-700 dark:bg-neutral-900/50 h-16 w-full sticky top-0 left-0 backdrop-blur-md"
+  class="border-b duration-200 ease-out hidden z-50 lg:flex items-center justify-center border-neutral-100 dark:border-neutral-700 dark:bg-neutral-900/50 h-16 w-full sticky top-0 left-0 backdrop-blur-md"
 >
   <div class="w-4/5 justify-between flex items-center h-full">
     <div class="flex gap-4 items-center">
